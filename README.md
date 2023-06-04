@@ -11,15 +11,14 @@ When classifying emails as ham or spam, the primary challenge lies in that the d
 ## Exploratory Data Analysis (EDA)
 I identified features that could effectively differentiate between the spam and ham. This involved extracting meaningful features from the email text, such as the presence of specific words, email length, punctuation usage, and other relevant characteristics. Some feature ideas I explored included:
 
-- Number of characters in the subject/body: Longer emails may exhibit distinctive patterns that can aid in classification.
-- Number of words in the subject/body: The length of the email can provide insights into its content, allowing me to distinguish spam from legitimate emails.
-- Use of punctuation: I examined the usage of specific punctuation marks, such as exclamation points or dollar signs, to help identify spam emails.
-- Number/percentage of capital letters: Excessive capitalization is often a characteristic of spam emails and can be utilized as a feature.
-- Reply or Forwarded emails: I analyzed whether an email was a reply to or a forwarded message, providing valuable information for spam detection.
+- Number of characters in the subject/body: Longer emails may exhibit distinctive patterns in ham emails
+- Number of words in the subject/body: The length of the email can provide insights into its content
+- Use of punctuation: The usage of specific punctuation marks, such as exclamation points or dollar signs, is often a characteristic of spam emails
+- Number/percentage of capital letters: Excessive capitalization is often a characteristic of spam emails
 - Proportion of emails in each class containing a particular set of words: When dealing with binary indicators like the presence of a particular word in the email text, I compared the proportion of spam emails containing the word to the proportion of ham emails containing the same word.
 
 ## Visualizations and ROC Curve
-Through exploratory data analysis, I gained insights into the characteristics of spam and ham emails, which helped me identify relevant features that could distinguish between the two. I analyzed the distribution of features, created visualizations such as histograms and kernel density plots, and explored patterns that aided in feature selection. One important visualization I used was the **Receiver Operating Characteristic (ROC) curve**, which helped me assess the performance of the classifier at various thresholds.
+Through exploratory data analysis, I gained insights into the characteristics of spam and ham emails, which helped identify relevant features that could distinguish between the two. I analyzed the distribution of features, created visualizations such as histograms and kernel density plots, and explored patterns that aided in feature selection. One important visualization I used was the **Receiver Operating Characteristic (ROC) curve**, which helped assess the performance of the classifier at various thresholds.
 
 ## Model Training and Evaluation
 The choice of classifier for this project was logistic regression with `scikit-learn`. By training the logistic regression model on the labeled dataset, I learned the underlying patterns and created an effective spam filter. To evaluate the performance of my classifier, I used various evaluation metrics such as precision, recall, and false-alarm rate. The ROC curve aided in selecting an appropriate threshold that balanced the detection of spam emails while minimizing false positives.
