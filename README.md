@@ -1,6 +1,6 @@
 # Spam_Ham_Classification
 
-Spam emails have become a major nuisance, cluttering our inboxes and potentially leading to security risks. The goal of this project was to build an effective filter that can accurately classify emails as spam (junk or commercial or bulk) or ham (non-spam) based on their content. By accurately identifying spam emails, I aimed to prevent them from reaching users' inboxes and ensure a better email experience.
+Spam emails have become a major nuisance, cluttering our inboxes and potentially leading to security risks. The goal of this project was to build an effective filter that can accurately classify emails as spam (junk, commercial, or bulk) or ham (non-spam) based on their content. By accurately identifying spam emails, I aimed to prevent them from reaching users' inboxes and ensure a better email experience.
 
 ## Data Source
 The dataset consists of email messages and their labels (0 for ham, 1 for spam). The labeled training dataset contains 8348 labeled examples, and the unlabeled test set contains 1000 unlabeled examples.
